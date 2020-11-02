@@ -41,14 +41,11 @@ export class App extends Component {
         <BrowserRouter>
             <Switch >
               <Route path='/' exact  render={()=>(!this.state.user?( <Login/>):(<Home user={this.state.user}/>))}/>
-
-              <Route path='/home' strict exact render={()=>(this.state.user?(<Home user={this.state.user}/>):( <Redirect to='/'/>))}/> 
-             
+              <Route path='/home' strict exact render={()=>(this.state.user?(<Home user={this.state.user}/>):( <Redirect to='/'/>))}/>
               <Route path='/invest' strict exact render={()=>(this.state.user?(<Invest user={this.state.user}/>):( <Redirect to='/'/>))}/>
               <Route path='/plans' strict exact render={()=>(this.state.user?(<Plans user={this.state.user} />):( <Redirect to='/'/>))}/>
               <Route path='/register' strict exact render={()=>(!this.state.user?(<Register />):(<Redirect to='/'/>))}/>
 
-              
             </Switch>
          </BrowserRouter>
       </div>

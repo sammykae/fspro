@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {FaAlignRight,FaHome,FaWallet,FaCoins,FaUser} from 'react-icons/fa'
+import {FaAlignRight,FaHome,FaWallet,FaCoins} from 'react-icons/fa'
 import {BiLogOut} from 'react-icons/bi'
 import {NavLink} from 'react-router-dom'
 import fire from './config/fire'

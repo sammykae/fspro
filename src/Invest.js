@@ -22,13 +22,13 @@ export class Invest extends Component {
 
     async getInfo(){
         mail= this.props.user.email
-        let plan="Basic"
+        
         let invested=""
          price=200
         
      await   fire.firestore().collection("fsp_users").where("email", "==", `${this.props.user.email}`).get().then(snapshot=>{
             snapshot.forEach(doc=>{
-                plan= doc.data().plan
+           
                 price=doc.data().price
                 invested=doc.data().invest_date
 
@@ -56,7 +56,7 @@ export class Invest extends Component {
     }
     render() {
         
-    
+        this.getInfo()
         const config = {
             reference: (new Date()).getTime(),
             email: mail,

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 import Logo from './resources/images/fsp2.png'
-import img from './resources/images/img.jpg'
 import fire from './config/fire'
 const db=fire.firestore()
 export class Register extends Component {
@@ -74,9 +73,7 @@ export class Register extends Component {
     render() {
         return (
              <div >
-            {/* // <div className="sign-box">
-            //     <img src={img} className="sign" alt="think"/>
-            // </div> */}
+           
             <div className='max' >
                 <div className='center container '>
                    

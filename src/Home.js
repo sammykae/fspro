@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Switch,Route,Redirect,BrowserRouter} from 'react-router-dom'
 import NavBar from './NavBar'
 import {FaBuffer,FaCheck} from 'react-icons/fa'
 import fire from './config/fire'
@@ -57,7 +56,6 @@ export class Home extends Component {
 
 
     render() {
-       
       
         const { planDetails } = this.state;
 
