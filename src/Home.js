@@ -75,6 +75,7 @@ export class Home extends Component {
        
       let chec=0
         const name=this.state.user.name
+        console.log(this.state.user)
         return (
             
             <div>
